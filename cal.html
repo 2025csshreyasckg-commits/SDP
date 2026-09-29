@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+</head>
+<body>
+   <input type="text" id="name1" placeholder="Enter your name">
+   <input type="text" id="name2" placeholder="Enter your name">
+   
+   <button onclick="vote()">Submit</button>
+   <p id="Answer">Here you will see the validation result.</p>
+
+<script>
+   function cal(){
+    var name1 = document.getElementById("name1").value;
+    var name2 = document.getElementById("name2").value;
+    var per = Math.floor(Math.random() * 100) + 1;
+    var res = document.getElementById("Answer");
+    res.innerHTML = "The love percentage between " + name1 + " and " + name2 + " is: " + per + "%";
+   }
+</script>
+</body>
+</html>
+    
